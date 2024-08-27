@@ -11,22 +11,17 @@ export default function MainComponent() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <header className="px-4 lg:px-6 h-14 flex items-center">
-        <Link href="#" className="flex items-center justify-center" prefetch={false}>
+        <Link href="/" className="flex items-center justify-center">
           <BitcoinIcon className="h-6 w-6" />
           <span className="sr-only">Crypto Insights</span>
+          <span className="font-bold">Crypto Insights</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
-            Features
+          <Link href="/tradeview" className="text-sm font-medium hover:underline underline-offset-4">
+            Tradeview
           </Link>
-          <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
-            Pricing
-          </Link>
-          <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
-            About
-          </Link>
-          <Link href="#" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
-            Contact
+          <Link href="/tokens" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+            Tokens
           </Link>
         </nav>
       </header>
